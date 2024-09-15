@@ -10,7 +10,7 @@ public class ForCamera : MonoBehaviour
     void FixedUpdate()
     {
         //transform.position = new Vector3(45+0.25f * Mathf.Cos(Time.time * 4), 50+0.25f * Mathf.Sin(Time.time * 4), 45);
-        cornerAngle += Time.deltaTime*1.5f;
+        cornerAngle += Time.deltaTime*1f;
         transform.position = new Vector3(45+Mathf.Cos(cornerAngle) * scaleX, 50+Mathf.Sin(cornerAngle) * Mathf.Cos(cornerAngle) * scaleY, 45);
     }
 }
